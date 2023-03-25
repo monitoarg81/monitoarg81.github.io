@@ -1,31 +1,40 @@
 
-document.getElementById("bPersonales").addEventListener("click", function(){
-    document.getElementById("cDatos").style.visibility='visible';
-    document.getElementById("cFormacion").style.visibility='hidden';
-    document.getElementById("cExp").style.visibility='hidden';
-    document.getElementById("cPerfil").style.color='rgb(87, 46, 12)';
-})
-document.getElementById("bPerfil").addEventListener("click", function(){
-    document.getElementById("cDatos").style.visibility='hidden';
-    document.getElementById("cFormacion").style.visibility='hidden';
-    document.getElementById("cExp").style.visibility='hidden';
-    document.getElementById("cPerfil").style.color='yellow';
-})
+var image = document.getElementById("foto");
 
-document.getElementById("foto").addEventListener("click", function(){
-    window.alert("Desarrollo Web by @Monitoarg81");
+document.getElementById("bPersonales").addEventListener("click", function(){
+    document.getElementById("descripcion").style.visibility='visible';
+    document.getElementById("contactos").style.visibility='hidden';
+    document.getElementById("formacion").style.visibility='hidden';
+    document.getElementById("experiencia").style.visibility='hidden';
+    image.src= "images/dniWeb.jpg";
 })
+document.getElementById("bContactos").addEventListener("click", function(){
+    document.getElementById("descripcion").style.visibility='hidden';
+    document.getElementById("formacion").style.visibility='hidden';
+    document.getElementById("experiencia").style.visibility='hidden';
+    document.getElementById("contactos").style.visibility='visible';
+    image.src= "images/contactos.jpg";
+})  
 
 document.getElementById("bFormacion").addEventListener("click", function(){
-    document.getElementById("cDatos").style.visibility='hidden';
-    document.getElementById("cFormacion").style.visibility='visible';
-    document.getElementById("cExp").style.visibility='hidden';
-    document.getElementById("cPerfil").style.color='rgb(87, 46, 12)';
-})
-
-document.getElementById("bExp").addEventListener("click", function(){
-    document.getElementById("cDatos").style.visibility='hidden';
-    document.getElementById("cFormacion").style.visibility='hidden';
-    document.getElementById("cExp").style.visibility='visible';
-    document.getElementById("cPerfil").style.color='rgb(87, 46, 12)';
+    document.getElementById("descripcion").style.visibility='hidden';
+    document.getElementById("contactos").style.visibility='hidden';
+    document.getElementById("experiencia").style.visibility='hidden';
+    document.getElementById("formacion").style.visibility='visible';
+    image.src= "images/formacademica.jpg";
+})  
+document.getElementById("bExperiencia").addEventListener("click", function(){
+    document.getElementById("descripcion").style.visibility='hidden';
+    document.getElementById("formacion").style.visibility='hidden';
+    document.getElementById("contactos").style.visibility='hidden';
+    document.getElementById("experiencia").style.visibility='visible';
+    image.src= "images/explaborar.png";
+})  
+document.getElementById("foto").addEventListener("click", function(){
+    document.getElementById("descripcion").style.visibility='hidden';
+    document.getElementById("formacion").style.visibility='hidden';
+    document.getElementById("experiencia").style.visibility='hidden';
+    document.getElementById("contactos").style.visibility='hidden';
+    image.src="images/cv.jpg";
+    
 })

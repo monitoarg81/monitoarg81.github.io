@@ -1,86 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV_FrontEnd</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" type="image/x-icon"  href="iconos\aplic.ico">
+    <title>Proyecto CV</title>
+    <link rel="stylesheet"  href="css\estilos.css"/>
+    <link rel="icon" type="image/x-icon" href="iconos\aplic.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 </head>
-    <body>
-        
-    <header>
-        <p style="background-image: url('images/fondo1.jpg'); background-size: cover;"> 
-            CURRICULUM VITAE
-        </p>
-        
+<body style="background-image: url('images/fondo1.jpg'); background-size: 100%;">
+    <header >
+        <h1> C U R R I C U L U M  _  V I T A E </h1 >
     </header>
-    <nav id="barra" style="background-image: url('images/fondo2.jpg'); background-size: cover; opacity: 60%;">
-        <button type="button" id="bPerfil"> Perfil</button>
-        <button type="button" id="bPersonales"> Datos Personales</button>
-        <button type="button" id="bFormacion"> Formación Académica</button>
-        <button type="button" id="bExp"> Experiencia Laboral</button>
-        <!--<button type="button" id="bPersonales"> Datos Personales</button>-->
+    <nav id="barra" style="background-image: url('images/fondo2.jpg'); background-size: cover; opacity: 95%;">
+        <button type="button" id="bPersonales" onclick="cambioFoto()">Datos Personales</button>
+        <button type="button" id="bContactos" onclick="cambioFoto()">Datos Contacto</button>
+        <button type="button" id="bFormacion" onclick="cambioFoto()">Formación Académica</button>
+        <button type="button" id="bExperiencia" onclick="cambioFoto()">Experiencia Laboral</button>
     </nav>
-    <table>
-        <tr>
-        <th id="izquierda" style="background-image: url('images/fondo4.jpg');opacity:70;">
-            <section>
-                <article id="cPerfil">
-                    <ol id="p1"> * Habilidades comunicativas</ol><br>
-                    <ol id="p1"> * Trabajo en equipo</ol><br>
-                    <ol id="p1"> * Creatividad</ol><br>
-                    <ol id="p1"> * Adaptabilidad </ol><br>
-                    <ol id="p1"> * Liderazgo </ol><br>
-                    <ol id="p1"> * Resolución de problemas </ol><br>
-                    <ol id="p1"> * Independencia </ol><br>
-                </article>
+    <table >
+        <td id="izquierda" style="background-image: url('images/fondo4.jpg');opacity:70;">
+            <p id="p1">Caracteristicas personales: <br></p>
             
-        
-            </section>
+               <ol id="cp"> * Habilidades comunicativas.</ol>
+               <ol id="cp"> * Trabajo en equipo.</ol>
+               <ol id="cp"> * Creatividad.</ol>
+               <ol id="cp"> * Adaptabilidad.</ol>
+               <ol id="cp"> * Liderazgo.</ol>
+               <ol id="cp"> * Resolución de problemas.</ol>
+               <ol id="cp"> * Independencia.</ol>
             
-        </th>
-        <th id="centro" style="background-image: url('images/fondoTabla.jpg'); background-size:cover">
+        </td>
+        <td id="centro">
+            <!--  <article id="descripcion"> -->
+                <div id="descripcion"> Datos Personales:
+                    <ol>Apellido/s: Mallard</ol>
+                    <ol>Nombre/s: Mario Alberto</ol>
+                    <ol>Fecha de Nacimiento: 05/09/1981</ol>
+                    <ol>Dirección: Simón Bolivar norte 549</ol>
+                
+                </div>
+                
+           <!-- </article>
+            <article id="contactos"> -->
+                <div id="contactos" > Datos de Contacto:
+                    <ol id="cont">Teléfono: 2965544332</ol>
+                    <ol id="cont">E-Mail: buscotrabajo@hotmail.com</ol>
+                    <ol id="cont">Instagram: @sintrabajo</ol>
+                    <ol id="cont">Facebook: @sintrabajo.face</ol>
+                </div>
+            <!--</article> 
+            <article id="formacion"> -->
+                <div id="formacion">Formación Académica:
+                    <ol id="t1"> Estudios Básicos:
+                    <ul id="estudios">Primario Escuela n° 6 "Isla Pavón"</ul>
+                    <ul id="estudios">Secundario - Perito Mercantil: J.F.Tognón</ul>
+                </ol>
+                <ol id="t1">Cursos:
+                    <ul id="cursos">Introducción a la Programación - Argentina Programa (INTI)</ul>
+                    <ul id="cursos">Primeros Pasos en Desarrollo Front-End</ul>
+                </ol>
+                <ol id="t1">Estudios Superiores:
+                    <ul id="estSup">Analista de Sistemas - I. S. Santo Domingo</ul>
+                </ol>
+                </div>
+            <!--</article> 
+            <article id="experiencia"> -->
+                <div id="experiencia">Experiencia Laboral:
+                    <ol id="t1">Puesto - Empresa:
+                        <ul id="exp">Mantenimiento informático - "Espacio del Conocimiento" (mclpb)</ul>
+                        <ul id="exp">Encargado sector Patrimonio - Secretaría Hacienda (mclpb)</ul>
+                    </ol>   
+                </div>
             
-            <article id="cDatos"> 
-                <p id ="d1">- Datos Personales</p>
-                    <p> * Apellido: Mallard</p>
-                    <p> * Nombres: Mario Alberto</p>
-                    <p> * Fecha de Nacimiento: 05 Septiembre 1981 </p>
-                    <p> * Lugar de Nacimiento: Dean Funes (Córdoba)</p>
-                    <p> * Dirección: Sarmiento 1233 (depto. 2)</p>
-            </article>
-            <article id="cFormacion">
-                <p id="f1">- Estudios Básicos:</p>
-                    <p>* Primario: Escuela N° 6 Isla Pavón (C.L.P.B:)</p>
-                    <p>* Secundario: Perito Mercantil - J.F.Tognón (C.L.P.B)</p>
-                <p id="f1">- Cursos:</p>
-                    <p>* Introducción a la Programación - Argentina Programa (INTI)</p>
-                    <p>* Primeros Pasos en Desarrollo Front-End</p>
-                <p id="f1">Estudios Superiores:</p>
-                    <p>* Analista de Sistemas - Instituto Superior Santo Domingo</p>
-            </article>
-            <article id="cExp">
-                <p id="e1">- Experiencia Laboral:</p>
-                    <p>* Mantenimiento Técnico-Informático <br> Espacio del Conocimiento (m.c.l.p.b.)</p>
-                    <p>* Encargado Sector Patrimonio <br> Secretaría Hacienda (m.c.l.p.b.)</p>
-                </article>  
-            </th>
-    <th id="derecha">
-        <aside>
+            
+        </td>
+        <td id="derecha">
             <img id="foto" src="https://www.modelocurriculum.net/wp-content/foto-curriculum-vitae-hombre.jpg"/>
-        </aside>
-    </th>
-</tr>
-</table>
-<script src="Javascript\funciones.js"></Script>
+            <p> Reestablecer!</p>
+        </td>
+        
+    </table>
     <footer>
-        Desarrollado por '@monitoarg81' - Cmte. Luis Piedra Buena (S.C.)
+        Desarrollado por '@monitoarg81';
     </footer>
-    
+
+    <script src="Javascript/funciones.js"></script>
 </body>
 </html>
