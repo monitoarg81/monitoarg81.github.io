@@ -1,86 +1,186 @@
 body{
-    margin:0%;
-}
-h1{
-    padding-top: 0%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-table {
-    width: 100%;
-    text-align: center;
-    background-color: aqua;
-    border: 3px solid rgb(192, 146, 235);
-    margin:0px 0px 0px 0xp;
-    
-}
-
-#izquierda{
-    width: 30%;
-    height: 100%;
-    background-color: rgb(192, 146, 235);
+    background-color: cyan;
+    height: 600px;
+    max-height: 600px;
     margin: 0%;
     
 }
-#derecha{
-    width: 30%;
-    height: 100%;
-    background-color: rgb(192, 146, 235);
-    padding-bottom: 300px;
-    
-    
 
+header{
+    font-size: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue;
+    margin: 0%;
+    text-align: center;
+    background-attachment: fixed;
+    height: 145px;
+    font-family: "Alkatra", cursive;
+    padding: 0%;
+    
 }
 #barra{
-    background-color: rgb(192, 146, 235);
-    height: 30px;
-    align-content: justify;
-    padding-top: 25px;
-    border: 3px solid rgb(192, 146, 235);
-}
-
-#foto{
-    width: 185px;
-    height: 185px;
-    border: 2px solid black;
-    border-radius: 122px;
-    margin-top: 120px;
+    margin: 0%;
+    background-color: rgb(192,146,235);
+    text-align: center;
+    height: 75px;
+    padding-top: 35px;
+    border: 3px solid rgb(131, 80, 179);
     
+}
+#fBarra{
+    height: 100%;
+    width: 100%;
+
+}
+table{
+    width: 100%;
+    height: 520px;
+    /*border: 3px solid rgb(131, 80, 179);*/
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+th{
+    width: 33%;
+    height: 100%;
+    /*background-color: rgb(192,146, 235);*/
+    border: 3px solid rgb(131, 80, 179);
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
 }
 ol{
-    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
 }
-#descripcion{
-        
-        background-color: cornflowerblue;
-        position:absolute;
-        width:538px;
-        
-    }
-#contactos{
-    visibility: hidden;
-    background-color: cornflowerblue;
-    position:absolute;
-        width:538px;
+ul{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
 }
-#formacion{
-    visibility: hidden;
-    background-color: cornflowerblue;
-    position:absolute;
-        width:538px;
+button{
+    height: 45px;
+    width: 175px;
+    color: blue;
 }
-#experiencia{
-    visibility: hidden;
-    background-color: cornflowerblue;
-    position:absolute;
-        width:538px;
-}
-footer{
-    text-align: right;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-small;
-}
-p1{
-    font-size: 25px;
-    font-style: oblique;
+button:hover{
+    background-color: rgb(185, 166, 166);
+    border: none;
+    font-family: "Oswald";
+    color: rgb(58, 5, 143);
+    font-size: 12px;
     
+
+}
+aside{
+    position: right;
+    width: 30%;
+    height: 100%;
+    /*background-color: rgb(192,146, 235);*/
+    text-align: center;
+}
+#foto{
+    width: 225px;
+    height: 225px;
+    border: 3px solid black;
+    border-radius: 122px;
+    margin-top: 40%;
+    margin-left: 100px;
+}
+#foto:hover{
+    border: 3px solid green;
+}
+section{
+    width: 35%;
+    height: 100%;
+    /*background-color: rgb(192,146,235);*/
+    padding: 0%;
+    
+}
+#foto1{
+    width: 300px;
+    height: 300px;
+    
+}
+p{
+    text-align: center;
+    margin:0%;
+}
+
+footer{
+    padding-top: 15px;
+    text-align: right;
+    font-family: "Oswald";
+    font-size: small;
+    color: blue; 
+}
+article{
+    padding: 0%;
+    position: absolute;
+    /*background-color: rgb(192,146,235);*/
+    height: 100%;
+    width: 33%;
+    margin: 0%;
+    text-align: center;
+}
+#cPerfil{
+    margin-top: 55px;
+    visibility: visible;
+    color: rgb(87, 46, 12);
+    font-family: "Roboto", cursive;
+    position: absolute;
+}
+#centro{
+    text-align: center;
+    align-content: center;
+    margin-top: 35px;
+}
+#cDatos{
+    max-width: 95%;
+    position: absolute;
+    color: goldenrod;
+    visibility: hidden;
+    margin-top: 35px;
+    text-align: center;
+    
+}
+#e1{
+    text-decoration: underline;
+    font-family: 'Alkatra', bold;
+    font-size: 20px;
+    color: rgb(64, 199, 46);
+}
+#f1{
+    text-decoration: underline;
+    font-family: 'Alkatra', bold;
+    font-size: 20px;
+    color: rgb(64, 199, 46);
+}
+#d1{
+    text-decoration: underline;
+    font-family: 'Alkatra', bold;
+    font-size: 20px;
+    color: rgb(64, 199, 46);
+}
+#cFormacion{
+    max-width: 95%;
+    color: goldenrod;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 35px;
+    text-align: center;
+}
+#cExp{
+    max-width: 90%;
+    color: goldenrod;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 35px;
+    text-align: center;
+}
+#izquierda{
+    max-height: 100%;
+    margin-top:55px;
 }
